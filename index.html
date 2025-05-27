@@ -3,340 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprendre le Tracking E-commerce - Guide Explicatif</title>
-</head>
-<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #f5f5f5;">
-    <div style="max-width: 900px; margin: 20px auto; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <title>Comprendre le Tracking E-commerce - Guide Visual</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         
-        <!-- Header -->
-        <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 40px; text-align: center;">
-            <h1 style="color: #ffffff; margin: 0; font-size: 36px; font-weight: 300;">
-                Comprendre le Tracking E-commerce
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .progress-bar {
+            background-color: #e5e7eb;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #10b981;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #f0f4f8;">
+    
+    <!-- Container principal -->
+    <div style="max-width: 1000px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 0 30px rgba(0,0,0,0.1);">
+        
+        <!-- Hero Section -->
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); padding: 80px 40px; text-align: center; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background-color: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+            <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background-color: rgba(255,255,255,0.05); border-radius: 50%;"></div>
+            
+            <h1 style="color: #ffffff; margin: 0; font-size: 42px; font-weight: 300; position: relative; z-index: 1;">
+                Le Tracking E-commerce Décrypté
             </h1>
-            <p style="color: #94a3b8; margin: 20px 0 0 0; font-size: 18px;">
-                Guide explicatif pour optimiser vos données Google Ads
+            <p style="color: #cbd5e1; margin: 20px 0 0 0; font-size: 20px; position: relative; z-index: 1;">
+                Pour piloter efficacement tes 8000€/mois de budget Google Ads
             </p>
         </div>
 
-        <!-- Navigation visuelle -->
-        <div style="background-color: #f8fafc; padding: 30px 40px; border-bottom: 1px solid #e5e7eb;">
-            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                <div style="text-align: center; flex: 1; min-width: 200px; padding: 10px;">
-                    <div style="background-color: #4f46e5; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 24px;">1</div>
-                    <p style="margin: 10px 0 0 0; color: #374151; font-weight: bold;">Le Problème</p>
+        <!-- Quick Stats -->
+        <div style="background-color: #f8fafc; padding: 30px 40px; border-bottom: 2px solid #e5e7eb;">
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+                <div class="hover-scale" style="text-align: center; flex: 1; min-width: 150px;">
+                    <div style="font-size: 36px; color: #10b981; font-weight: bold;">98,2%</div>
+                    <p style="margin: 5px 0 0 0; color: #6b7280;">Commandes expédiées en Avril 2025 </p>
                 </div>
-                <div style="text-align: center; flex: 1; min-width: 200px; padding: 10px;">
-                    <div style="background-color: #f59e0b; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 24px;">2</div>
-                    <p style="margin: 10px 0 0 0; color: #374151; font-weight: bold;">Pourquoi c'est complexe</p>
+                <div class="hover-scale" style="text-align: center; flex: 1; min-width: 150px;">
+                    <div style="font-size: 36px; color: #f59e0b; font-weight: bold;">1,6%</div>
+                    <p style="margin: 5px 0 0 0; color: #6b7280;">Commandes annulées</p>
                 </div>
-                <div style="text-align: center; flex: 1; min-width: 200px; padding: 10px;">
-                    <div style="background-color: #10b981; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 24px;">3</div>
-                    <p style="margin: 10px 0 0 0; color: #374151; font-weight: bold;">Les Solutions</p>
+                <div class="hover-scale" style="text-align: center; flex: 1; min-width: 150px;">
+                    <div style="font-size: 36px; color: #ef4444; font-weight: bold;">30%</div>
+                    <p style="margin: 5px 0 0 0; color: #6b7280;">Données perdues (cookies)</p>
+                </div>
+                <div class="hover-scale" style="text-align: center; flex: 1; min-width: 150px;">
+                    <div style="font-size: 36px; color: #8b5cf6; font-weight: bold;">8000€</div>
+                    <p style="margin: 5px 0 0 0; color: #6b7280;">Budget mensuel</p>
                 </div>
             </div>
         </div>
 
-        <!-- Content -->
-        <div style="padding: 50px 40px;">
+        <!-- Main Content -->
+        <div style="padding: 60px 40px;">
             
-            <!-- Section 1: Le Problème -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #4f46e5; font-size: 32px; margin: 0 0 30px 0; display: flex; align-items: center;">
-                    <span style="background-color: #4f46e5; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">1</span>
-                    Le Problème Actuel
+            <!-- Introduction contextuelle -->
+            <div class="fade-in" style="text-align: center; margin-bottom: 60px;">
+                <p style="color: #64748b; font-size: 18px; line-height: 1.8; max-width: 700px; margin: 0 auto;">
+                    Suite à notre discussion de ce matin et mon échange avec Sirdata, 
+                    voici l'analyse complète pour t'aider à comprendre les enjeux et prendre la meilleure décision.
+                </p>
+            </div>
+
+            <!-- Section 1: La situation actuelle illustrée -->
+            <div class="fade-in" style="margin-bottom: 80px;">
+                <h2 style="color: #1e293b; font-size: 32px; margin: 0 0 40px 0; text-align: center;">
+                    🎬 Comment fonctionne ton tracking aujourd'hui
                 </h2>
                 
-                <div style="background-color: #fef3c7; border-radius: 10px; padding: 30px; margin-bottom: 30px;">
-                    <h3 style="color: #92400e; margin: 0 0 15px 0;">📊 Situation actuelle</h3>
-                    <p style="color: #78350f; line-height: 1.8; margin: 0;">
-                        Aujourd'hui, Google Ads compte une vente dès qu'un client arrive sur la page de confirmation de commande. 
-                        C'est comme si on comptait tous les clients qui passent en caisse, même ceux qui finalement ne paient pas.
-                    </p>
-                </div>
-
-                <div style="display: flex; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px; background-color: #fee2e2; border-radius: 10px; padding: 25px;">
-                        <h4 style="color: #991b1b; margin: 0 0 10px 0;">❌ Problème B2B</h4>
-                        <p style="color: #7f1d1d; line-height: 1.6; margin: 0;">
-                            En B2B, beaucoup de clients choisissent "virement bancaire" mais certains ne paient jamais. 
-                            Google Ads les compte quand même comme des ventes réussies.
+                <!-- Infographie du processus actuel -->
+                <div style="background: linear-gradient(to right, #fef3c7, #fee2e2); border-radius: 15px; padding: 40px; margin-bottom: 40px;">
+                    <h3 style="color: #92400e; margin: 0 0 30px 0; text-align: center;">Le parcours d'une commande actuellement</h3>
+                    
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                        <div class="hover-scale" style="flex: 1; min-width: 180px; text-align: center;">
+                            <div style="background-color: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                <div style="font-size: 48px; margin-bottom: 10px;">🛒</div>
+                                <p style="margin: 0; color: #374151; font-weight: bold;">Client commande</p>
+                                <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 14px;">Choisit "virement ou mandat administratif"</p>
+                            </div>
+                        </div>
+                        
+                        <div style="color: #f59e0b; font-size: 30px;">→</div>
+                        
+                        <div class="hover-scale" style="flex: 1; min-width: 180px; text-align: center;">
+                            <div style="background-color: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 3px solid #10b981;">
+                                <div style="font-size: 48px; margin-bottom: 10px;">✅</div>
+                                <p style="margin: 0; color: #374151; font-weight: bold;">Page confirmation</p>
+                                <p style="margin: 5px 0 0 0; color: #10b981; font-size: 14px; font-weight: bold;">Google Ads compte !</p>
+                            </div>
+                        </div>
+                        
+                        <div style="color: #ef4444; font-size: 30px;">→</div>
+                        
+                        <div class="hover-scale" style="flex: 1; min-width: 180px; text-align: center;">
+                            <div style="background-color: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 3px solid #ef4444;">
+                                <div style="font-size: 48px; margin-bottom: 10px;">❓</div>
+                                <p style="margin: 0; color: #374151; font-weight: bold;">Paiement ?</p>
+                                <p style="margin: 5px 0 0 0; color: #ef4444; font-size: 14px;">1,6% ne paient pas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background-color: rgba(239,68,68,0.1); padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center;">
+                        <p style="margin: 0; color: #991b1b; font-size: 16px;">
+                            <strong>Le problème :</strong> Google Ads a déjà compté la vente même si le client ne paie jamais !
                         </p>
                     </div>
-                    <div style="flex: 1; min-width: 250px; background-color: #dbeafe; border-radius: 10px; padding: 25px;">
-                        <h4 style="color: #1e40af; margin: 0 0 10px 0;">🎯 Objectif idéal</h4>
-                        <p style="color: #1e3a8a; line-height: 1.6; margin: 0;">
-                            Compter uniquement les commandes réellement expédiées, 
-                            c'est-à-dire celles où le client a payé et où la marchandise part du stock.
-                        </p>
+                </div>
+
+                <!-- Ce que tu voulais -->
+                <div style="background-color: #dbeafe; border-radius: 15px; padding: 40px;">
+                    <h3 style="color: #1e40af; margin: 0 0 20px 0; text-align: center;">🎯 Ton objectif : Compter au bon moment</h3>
+                    
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 64px;">📦</div>
+                            <p style="margin: 10px 0 0 0; color: #1e3a8a; font-weight: bold;">Commande expédiée</p>
+                        </div>
+                        <div style="font-size: 40px; color: #3b82f6;">=</div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 64px;">💰</div>
+                            <p style="margin: 10px 0 0 0; color: #1e3a8a; font-weight: bold;">Vraie vente comptée</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 2: Pourquoi c'est complexe -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #f59e0b; font-size: 32px; margin: 0 0 30px 0; display: flex; align-items: center;">
-                    <span style="background-color: #f59e0b; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">2</span>
-                    Pourquoi C'est Techniquement Complexe
+            <!-- Section 2: L'explication technique simplifiée -->
+            <div class="fade-in" style="margin-bottom: 80px;">
+                <h2 style="color: #1e293b; font-size: 32px; margin: 0 0 40px 0; text-align: center;">
+                    🔧 Pourquoi c'est techniquement complexe
                 </h2>
 
-                <!-- Analogie du DataLayer -->
-                <div style="background-color: #f3f4f6; border-radius: 10px; padding: 30px; margin-bottom: 30px;">
-                    <h3 style="color: #374151; margin: 0 0 20px 0;">🚚 Comprendre le DataLayer (en simple)</h3>
+                <!-- Le DataLayer expliqué visuellement -->
+                <div style="background-color: #f8fafc; border-radius: 15px; padding: 40px; margin-bottom: 40px;">
+                    <h3 style="color: #374151; margin: 0 0 30px 0; text-align: center;">Le DataLayer : Le messager entre PrestaShop et Google Ads</h3>
                     
-                    <div style="background-color: white; border-radius: 8px; padding: 25px; margin-bottom: 20px;">
-                        <h4 style="color: #1f2937; margin: 0 0 15px 0;">Imaginez votre site comme un entrepôt...</h4>
-                        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-                            <div style="flex: 1; min-width: 200px;">
-                                <div style="background-color: #e5e7eb; padding: 20px; border-radius: 6px; text-align: center; margin-bottom: 10px;">
-                                    <div style="font-size: 40px;">🏭</div>
-                                    <p style="margin: 10px 0 0 0; color: #374151; font-weight: bold;">PrestaShop</p>
-                                    <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 14px;">Votre entrepôt</p>
-                                </div>
+                    <!-- Analogie visuelle -->
+                    <div style="background-color: white; border-radius: 10px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div style="display: flex; align-items: stretch; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 250px; background-color: #f3f4f6; padding: 25px; border-radius: 10px;">
+                                <h4 style="color: #1f2937; margin: 0 0 15px 0;">🏪 PrestaShop</h4>
+                                <p style="color: #4b5563; line-height: 1.6; margin: 0;">
+                                    <strong>Ton magasin</strong><br>
+                                    Gère tes commandes, stocks, expéditions...
+                                </p>
                             </div>
-                            <div style="color: #9ca3af; font-size: 30px; text-align: center;">→</div>
-                            <div style="flex: 1; min-width: 200px;">
-                                <div style="background-color: #fef3c7; padding: 20px; border-radius: 6px; text-align: center; margin-bottom: 10px;">
-                                    <div style="font-size: 40px;">📦</div>
-                                    <p style="margin: 10px 0 0 0; color: #92400e; font-weight: bold;">DataLayer</p>
-                                    <p style="margin: 5px 0 0 0; color: #78350f; font-size: 14px;">Le carnet de bord</p>
-                                </div>
+                            
+                            <div style="flex: 1; min-width: 250px; background-color: #fef3c7; padding: 25px; border-radius: 10px;">
+                                <h4 style="color: #92400e; margin: 0 0 15px 0;">📝 DataLayer</h4>
+                                <p style="color: #78350f; line-height: 1.6; margin: 0;">
+                                    <strong>Le messager</strong><br>
+                                    Transmet les infos de PrestaShop vers Google
+                                </p>
                             </div>
-                            <div style="color: #9ca3af; font-size: 30px; text-align: center;">→</div>
-                            <div style="flex: 1; min-width: 200px;">
-                                <div style="background-color: #dbeafe; padding: 20px; border-radius: 6px; text-align: center;">
-                                    <div style="font-size: 40px;">📊</div>
-                                    <p style="margin: 10px 0 0 0; color: #1e40af; font-weight: bold;">Google Ads</p>
-                                    <p style="margin: 5px 0 0 0; color: #1e3a8a; font-size: 14px;">Votre comptable</p>
+                            
+                            <div style="flex: 1; min-width: 250px; background-color: #dbeafe; padding: 25px; border-radius: 10px;">
+                                <h4 style="color: #1e40af; margin: 0 0 15px 0;">📊 Google Ads</h4>
+                                <p style="color: #1e3a8a; line-height: 1.6; margin: 0;">
+                                    <strong>Ton analyste</strong><br>
+                                    Compte les conversions pour optimiser
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Le problème illustré -->
+                        <div style="background-color: #fee2e2; padding: 25px; border-radius: 10px;">
+                            <h4 style="color: #991b1b; margin: 0 0 15px 0;">⚠️ Le problème identifié </h4>
+                            <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                                <div style="flex: 1; min-width: 200px;">
+                                    <p style="color: #7f1d1d; line-height: 1.6; margin: 0;">
+                                        <strong>Les modules tracking Prestashop standards transmettent :</strong><br>
+                                        ✅ "Commande créée"<br>
+                                        ✅ "Paiement accepté"<br>
+                                        ❌ <span style="text-decoration: line-through;">Statut "Expédié"</span> <strong>(Pas disponible !)</strong>
+                                    </p>
+                                </div>
+                                <div style="flex: 0 0 auto; text-align: center;">
+                                    <div style="font-size: 64px;">🚫</div>
                                 </div>
                             </div>
                         </div>
-                        <p style="color: #6b7280; line-height: 1.8; margin: 20px 0 0 0; font-style: italic;">
-                            Le DataLayer est comme un carnet de bord où PrestaShop note tous les événements. 
-                            Google Ads lit ce carnet pour savoir ce qui se passe dans votre boutique.
-                        </p>
-                    </div>
-
-                    <div style="background-color: #fee2e2; border-radius: 8px; padding: 20px;">
-                        <h4 style="color: #991b1b; margin: 0 0 10px 0;">⚠️ Le problème fondamental (confirmé par Sirdata)</h4>
-                        <p style="color: #7f1d1d; line-height: 1.6; margin: 0;">
-                            Les modules PrestaShop standards notent dans le carnet : "Commande passée" ✅<br>
-                            Mais ils ne notent PAS : "Commande expédiée" ❌<br><br>
-                            C'est comme si ton carnet de bord s'arrêtait à la prise de commande, 
-                            sans jamais noter si la marchandise est vraiment partie.<br><br>
-                            <strong>C'est pour ça que Sirdata me dit qu'il faut du développement custom à plus de 5000€.</strong>
-                        </p>
                     </div>
                 </div>
 
-                <!-- Détails techniques simplifiés -->
-                <div style="background-color: #ede9fe; border-radius: 10px; padding: 30px;">
-                    <h3 style="color: #5b21b6; margin: 0 0 20px 0;">🔧 Ce qu'il faudrait développer</h3>
+                <!-- Pourquoi c'est cher -->
+                <div style="background-color: #fef8e1; border-radius: 15px; padding: 40px;">
+                    <h3 style="color: #92400e; margin: 0 0 30px 0; text-align: center;">💡 Pourquoi Sirdata annonce plus de 5000€ pour remonter la donnée que tu souhaite : Expédié ?</h3>
                     
-                    <div style="display: grid; gap: 15px;">
-                        <div style="background-color: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
-                            <h4 style="color: #4c1d95; margin: 0 0 10px 0;">1. Modifier PrestaShop</h4>
-                            <p style="color: #6b7280; margin: 0; line-height: 1.6;">
-                                Créer un système qui surveille quand une commande passe en "expédié" 
-                                et qui l'écrit dans le DataLayer.
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                        <div class="hover-scale" style="background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                            <div style="font-size: 36px; margin-bottom: 15px; text-align: center;">🔨</div>
+                            <h4 style="color: #92400e; margin: 0 0 10px 0;">Développement sur-mesure</h4>
+                            <p style="color: #6b7280; line-height: 1.6; margin: 0;">
+                                Créer un module spécifique qui surveille les changements de statut
                             </p>
                         </div>
-                        <div style="background-color: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
-                            <h4 style="color: #4c1d95; margin: 0 0 10px 0;">2. Stocker temporairement</h4>
-                            <p style="color: #6b7280; margin: 0; line-height: 1.6;">
-                                Garder en mémoire toutes les infos de la commande en attendant l'expédition 
-                                (qui peut arriver plusieurs jours après).
+                        
+                        <div class="hover-scale" style="background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                            <div style="font-size: 36px; margin-bottom: 15px; text-align: center;">💾</div>
+                            <h4 style="color: #92400e; margin: 0 0 10px 0;">Stockage temporaire</h4>
+                            <p style="color: #6b7280; line-height: 1.6; margin: 0;">
+                                Garder les données en attente parfois plusieurs jours
                             </p>
                         </div>
-                        <div style="background-color: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
-                            <h4 style="color: #4c1d95; margin: 0 0 10px 0;">3. Connecter à Google Ads</h4>
-                            <p style="color: #6b7280; margin: 0; line-height: 1.6;">
-                                Utiliser l'API Google Ads pour envoyer la conversion plusieurs jours après le clic initial.
+                        
+                        <div class="hover-scale" style="background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                            <div style="font-size: 36px; margin-bottom: 15px; text-align: center;">🔌</div>
+                            <h4 style="color: #92400e; margin: 0 0 10px 0;">API complexe</h4>
+                            <p style="color: #6b7280; line-height: 1.6; margin: 0;">
+                                Utiliser l'API Google Ads pour les conversions différées
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 3: Les Solutions -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #10b981; font-size: 32px; margin: 0 0 30px 0; display: flex; align-items: center;">
-                    <span style="background-color: #10b981; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">3</span>
-                    Les Solutions Possibles
+            <!-- Section 3: Les solutions comparées -->
+            <div class="fade-in" style="margin-bottom: 80px;">
+                <h2 style="color: #1e293b; font-size: 32px; margin: 0 0 40px 0; text-align: center;">
+                    🚀 Les 2 solutions proposées par Sirdata
                 </h2>
 
                 <!-- Solution 1: Server-side -->
-                <div style="background-color: #d1fae5; border-radius: 10px; padding: 30px; margin-bottom: 30px;">
-                    <h3 style="color: #047857; margin: 0 0 20px 0;">✅ Solution 1 : Le Server-Side (Recommandé)</h3>
+                <div style="background: linear-gradient(to right, #d1fae5, #a7f3d0); border-radius: 15px; padding: 40px; margin-bottom: 40px;">
+                    <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+                        <div style="flex: 0 0 auto;">
+                            <div style="background-color: #10b981; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: bold;">1</div>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: #047857; margin: 0 0 10px 0; font-size: 28px;">Le Server-Side Tracking</h3>
+                            <p style="color: #065f46; font-size: 18px; margin: 0;">La solution que je recommande en priorité</p>
+                        </div>
+                    </div>
                     
-                    <div style="background-color: white; border-radius: 8px; padding: 25px; margin-bottom: 20px;">
-                        <h4 style="color: #065f46; margin: 0 0 15px 0;">Qu'est-ce que ça fait ?</h4>
-                        <p style="color: #374151; line-height: 1.8; margin: 0 0 20px 0;">
-                            Au lieu de compter sur le navigateur du client (qui peut refuser les cookies), 
-                            on envoie les données directement depuis votre serveur. C'est comme passer d'un comptage manuel 
-                            à un système automatique centralisé.
-                        </p>
+                    <div style="background-color: white; border-radius: 10px; padding: 30px; margin-top: 30px;">
+                        <h4 style="color: #047857; margin: 0 0 20px 0;">📈 Impact concret sur tes campagnes</h4>
                         
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-                            <div style="background-color: #a7f3d0; padding: 15px; border-radius: 6px; text-align: center;">
-                                <div style="font-size: 30px; margin-bottom: 10px;">💰</div>
-                                <p style="margin: 0; color: #047857; font-weight: bold;">500-1000€</p>
-                                <p style="margin: 5px 0 0 0; color: #065f46; font-size: 14px;">Investissement raisonnable</p>
+                        <!-- Visualisation de l'impact -->
+                        <div style="margin-bottom: 30px;">
+                            <p style="color: #374151; margin: 0 0 10px 0;"><strong>Conversions actuellement visibles :</strong></p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
                             </div>
-                            <div style="background-color: #a7f3d0; padding: 15px; border-radius: 6px; text-align: center;">
-                                <div style="font-size: 30px; margin-bottom: 10px;">📈</div>
-                                <p style="margin: 0; color: #047857; font-weight: bold;">+30% de données</p>
-                                <p style="margin: 5px 0 0 0; color: #065f46; font-size: 14px;">Récupère les refus cookies</p>
+                            <p style="color: #6b7280; font-size: 14px; margin: 5px 0 0 0;">70% (30% perdues à cause des cookies)</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 30px;">
+                            <p style="color: #374151; margin: 0 0 10px 0;"><strong>Avec le server-side :</strong></p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%;"></div>
                             </div>
-                            <div style="background-color: #a7f3d0; padding: 15px; border-radius: 6px; text-align: center;">
-                                <div style="font-size: 30px; margin-bottom: 10px;">⚡</div>
-                                <p style="margin: 0; color: #047857; font-weight: bold;">Impact immédiat</p>
-                                <p style="margin: 5px 0 0 0; color: #065f46; font-size: 14px;">ROI rapide garanti</p>
+                            <p style="color: #10b981; font-size: 14px; margin: 5px 0 0 0;">~90% des conversions trackées !</p>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 32px; color: #10b981; font-weight: bold;">500-1000€</div>
+                                <p style="margin: 5px 0 0 0; color: #6b7280;">Investissement</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 32px; color: #10b981; font-weight: bold;">+20 à 25%</div>
+                                <p style="margin: 5px 0 0 0; color: #6b7280;">De données récupérées</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 32px; color: #10b981; font-weight: bold;">1 à 2 sem</div>
+                                <p style="margin: 5px 0 0 0; color: #6b7280;">Mise en place</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Solution 2: Tracking expédié -->
-                <div style="background-color: #fef3c7; border-radius: 10px; padding: 30px; margin-bottom: 30px;">
-                    <h3 style="color: #92400e; margin: 0 0 20px 0;">⚖️ Solution 2 : Le Tracking "Expédié" (À évaluer)</h3>
-                    
-                    <div style="background-color: white; border-radius: 8px; padding: 25px;">
-                        <h4 style="color: #78350f; margin: 0 0 15px 0;">Ce que ça apporte</h4>
-                        <p style="color: #374151; line-height: 1.8; margin: 0 0 20px 0;">
-                            Ne compte que les commandes réellement expédiées, éliminant ainsi le problème des 1,6% de commandes annulées.
-                        </p>
-                        
-                        <div style="background-color: #fed7aa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                            <h4 style="color: #92400e; margin: 0 0 15px 0;">💭 La vraie question à se poser</h4>
-                            <p style="color: #78350f; line-height: 1.8; margin: 0;">
-                                <strong>Si dans ces 1,6% de commandes annulées, tu as régulièrement des montants importants 
-                                (>5000€)</strong>, alors l'investissement peut se justifier.<br><br>
-                                Exemple : Une seule grosse commande annulée de 10 000€ fausse plus tes statistiques 
-                                que 50 petites commandes de 200€.
-                            </p>
+                <div style="background: linear-gradient(to right, #fef3c7, #fed7aa); border-radius: 15px; padding: 40px;">
+                    <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+                        <div style="flex: 0 0 auto;">
+                            <div style="background-color: #f59e0b; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: bold;">2</div>
                         </div>
-
-                        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                            <div style="flex: 1; min-width: 200px; background-color: #fee2e2; padding: 20px; border-radius: 8px;">
-                                <h5 style="color: #991b1b; margin: 0 0 10px 0;">❌ Inconvénients</h5>
-                                <ul style="color: #7f1d1d; margin: 0; padding-left: 20px;">
-                                    <li>Coût élevé (>5000€)</li>
-                                    <li>Développement complexe</li>
-                                    <li>Délais de mise en place</li>
-                                    <li>Maintenance future</li>
+                        <div style="flex: 1;">
+                            <h3 style="color: #92400e; margin: 0 0 10px 0; font-size: 28px;">Le Tracking "Expédié"</h3>
+                            <p style="color: #78350f; font-size: 18px; margin: 0;">Solution sur-mesure pour éliminer les 1,6% d'erreur</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background-color: white; border-radius: 10px; padding: 30px; margin-top: 30px;">
+                        <h4 style="color: #92400e; margin: 0 0 20px 0;">⚖️ Analyse coût/bénéfice</h4>
+                        
+                        <!-- Cas d'usage -->
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                            <div style="background-color: #dcfce7; padding: 20px; border-radius: 10px;">
+                                <h5 style="color: #166534; margin: 0 0 10px 0;">✅ Ça vaut le coup si :</h5>
+                                <ul style="color: #14532d; margin: 0; padding-left: 20px; line-height: 1.8;">
+                                    <li>Tu as régulièrement des commandes >5000€ annulées</li>
+                                    <li>Les grosses commandes représentent une part importante</li>
+                                    <li>Tu veux une précision absolue</li>
                                 </ul>
                             </div>
-                            <div style="flex: 1; min-width: 200px; background-color: #dcfce7; padding: 20px; border-radius: 8px;">
-                                <h5 style="color: #166534; margin: 0 0 10px 0;">✅ Avantages</h5>
-                                <ul style="color: #14532d; margin: 0; padding-left: 20px;">
-                                    <li>Données 100% fiables</li>
-                                    <li>Évite les grosses erreurs</li>
-                                    <li>Optimisation précise</li>
-                                    <li>Tranquillité d'esprit</li>
+                            
+                            <div style="background-color: #fee2e2; padding: 20px; border-radius: 10px;">
+                                <h5 style="color: #991b1b; margin: 0 0 10px 0;">❌ Pas prioritaire si :</h5>
+                                <ul style="color: #7f1d1d; margin: 0; padding-left: 20px; line-height: 1.8;">
+                                    <li>Les annulations sont surtout des petits montants</li>
+                                    <li>1,6% d'erreur est acceptable</li>
+                                    <li>Budget limité pour l'optimisation</li>
                                 </ul>
+                            </div>
+                        </div>
+                        
+                        <div style="background-color: #fef8e1; padding: 20px; border-radius: 10px; text-align: center;">
+                            <p style="margin: 0; color: #92400e; font-size: 18px;">
+                                <strong>Investissement : >5000€</strong> pour corriger 1,6% d'erreur
+                            </p>
+                            <p style="margin: 10px 0 0 0; color: #78350f;">
+                                À toi de calculer si c'est rentable selon tes commandes annulées
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rappel de l'analyse de mai -->
+            <div class="fade-in" style="background-color: #f3f4f6; border-radius: 15px; padding: 40px; margin-bottom: 60px;">
+                <h3 style="color: #1e293b; margin: 0 0 30px 0; text-align: center;">
+                    📊 Rappel : Notre analyse de mai 2025
+                </h3>
+                
+                <div style="background-color: white; border-radius: 10px; padding: 30px;">
+                    <p style="color: #64748b; text-align: center; margin: 0 0 30px 0; font-size: 16px;">
+                        Sur 1556 commandes analysées entre février et mai
+                    </p>
+                    
+                    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px;">
+                        <div class="hover-scale" style="text-align: center;">
+                            <div style="background-color: #d1fae5; width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                <div>
+                                    <div style="font-size: 32px; color: #047857; font-weight: bold;">98,2%</div>
+                                    <div style="font-size: 14px; color: #065f46;">Expédiées</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hover-scale" style="text-align: center;">
+                            <div style="background-color: #fee2e2; width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                <div>
+                                    <div style="font-size: 32px; color: #dc2626; font-weight: bold;">1,6%</div>
+                                    <div style="font-size: 14px; color: #991b1b;">Annulées</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hover-scale" style="text-align: center;">
+                            <div style="background-color: #e0e7ff; width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                <div>
+                                    <div style="font-size: 32px; color: #4f46e5; font-weight: bold;">0,7%</div>
+                                    <div style="font-size: 14px; color: #4338ca;">Venant des nouveaux clients </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Tableau récapitulatif -->
-                <div style="background-color: #f3f4f6; border-radius: 10px; padding: 30px;">
-                    <h3 style="color: #1f2937; margin: 0 0 20px 0; text-align: center;">📊 Comparaison Rapide</h3>
-                    
-                    <table style="width: 100%; border-collapse: collapse; background-color: white; border-radius: 8px; overflow: hidden;">
-                        <thead>
-                            <tr style="background-color: #e5e7eb;">
-                                <th style="padding: 15px; text-align: left; color: #374151;">Critère</th>
-                                <th style="padding: 15px; text-align: center; color: #374151;">Server-Side</th>
-                                <th style="padding: 15px; text-align: center; color: #374151;">Tracking "Expédié"</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding: 15px; border-top: 1px solid #e5e7eb;">Coût</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb; color: #059669; font-weight: bold;">500-1000€</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb; color: #dc2626; font-weight: bold;">>5000€</td>
-                            </tr>
-                            <tr style="background-color: #f9fafb;">
-                                <td style="padding: 15px; border-top: 1px solid #e5e7eb;">Impact sur les données</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb;">+30% de conversions visibles</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb;">Corrige 1,6% d'erreur</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 15px; border-top: 1px solid #e5e7eb;">Complexité</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb;">Simple (Sirdata s'en occupe)</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb;">Très complexe</td>
-                            </tr>
-                            <tr style="background-color: #f9fafb;">
-                                <td style="padding: 15px; border-top: 1px solid #e5e7eb;">Délai de mise en place</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb;">1-2 semaines (Sirdata)</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb;">4-6 semaines (Sirdata)</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 15px; border-top: 1px solid #e5e7eb;">ROI</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb; color: #059669;">Excellent</td>
-                                <td style="padding: 15px; text-align: center; border-top: 1px solid #e5e7eb; color: #f59e0b;">À calculer selon tes annulations</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
 
-            <!-- Recommandation finale -->
-            <div style="background-color: #dbeafe; border-radius: 10px; padding: 40px; margin-bottom: 40px;">
-                <h2 style="color: #1e40af; font-size: 28px; margin: 0 0 20px 0; text-align: center;">
-                    💡 Ma Recommandation
+            <!-- Ma recommandation -->
+            <div class="fade-in" style="background: linear-gradient(135deg, #dbeafe, #c7d2fe); border-radius: 15px; padding: 50px; margin-bottom: 60px;">
+                <h2 style="color: #1e40af; margin: 0 0 30px 0; text-align: center; font-size: 32px;">
+                    🎯 Ma recommandation stratégique
                 </h2>
                 
-                <div style="background-color: white; border-radius: 8px; padding: 30px;">
-                    <h3 style="color: #1e3a8a; margin: 0 0 20px 0;">Approche en 2 temps</h3>
-                    
-                    <div style="display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
-                        <div style="flex: 1; min-width: 250px; background-color: #f0f9ff; padding: 25px; border-radius: 8px; border: 2px solid #60a5fa;">
-                            <div style="background-color: #3730a3; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; font-weight: bold;">1</div>
-                            <h4 style="color: #1e40af; margin: 0 0 10px 0;">Immédiatement : Server-Side</h4>
-                            <p style="color: #1e3a8a; line-height: 1.6; margin: 0;">
-                                Sirdata peut le mettre en place rapidement. ROI garanti, amélioration immédiate de 30% sur la qualité des données. 
-                                Indispensable pour piloter efficacement 8000€/mois de budget.
-                            </p>
+                <div style="background-color: white; border-radius: 10px; padding: 40px;">
+                    <div style="display: flex; gap: 30px; margin-bottom: 30px; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 300px;">
+                            <div style="background-color: #f0f9ff; padding: 30px; border-radius: 10px; border: 2px solid #3b82f6;">
+                                <h3 style="color: #1e40af; margin: 0 0 15px 0;">
+                                    <span style="background-color: #3b82f6; color: white; padding: 5px 15px; border-radius: 20px; font-size: 16px;">PRIORITÉ 1</span>
+                                </h3>
+                                <h4 style="color: #1e3a8a; margin: 15px 0 10px 0;">Server-Side avec Sirdata</h4>
+                                <ul style="color: #64748b; line-height: 1.8; margin: 0; padding-left: 20px;">
+                                    <li>Mise en place rapide (1-2 semaines)</li>
+                                    <li>ROI immédiat et mesurable</li>
+                                    <li>+30% de données récupérées</li>
+                                    <li>Budget maîtrisé (500-1000€)</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div style="flex: 1; min-width: 250px; background-color: #fefce8; padding: 25px; border-radius: 8px; border: 2px solid #fbbf24;">
-                            <div style="background-color: #f59e0b; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; font-weight: bold;">2</div>
-                            <h4 style="color: #92400e; margin: 0 0 10px 0;">Analyser puis décider</h4>
-                            <p style="color: #78350f; line-height: 1.6; margin: 0;">
-                                Regarde sur 3 mois la valeur moyenne de tes commandes annulées. 
-                                Si tu as souvent des montants >5000€, alors envisage le tracking "expédié" avec Sirdata.
-                            </p>
+                        
+                        <div style="flex: 1; min-width: 300px;">
+                            <div style="background-color: #fffbeb; padding: 30px; border-radius: 10px; border: 2px solid #fbbf24;">
+                                <h3 style="color: #92400e; margin: 0 0 15px 0;">
+                                    <span style="background-color: #f59e0b; color: white; padding: 5px 15px; border-radius: 20px; font-size: 16px;">PRIORITÉ 2</span>
+                                </h3>
+                                <h4 style="color: #78350f; margin: 15px 0 10px 0;">Analyser tes annulations</h4>
+                                <ul style="color: #92400e; line-height: 1.8; margin: 0; padding-left: 20px;">
+                                    <li>Regarde la valeur moyenne des annulées</li>
+                                    <li>Identifie si ce sont des gros montants</li>
+                                    <li>Calcule le vrai impact financier</li>
+                                    <li>Décide ensuite pour le tracking expédié</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     
-                    <div style="background-color: #eff6ff; padding: 20px; border-radius: 8px; text-align: center;">
-                        <p style="color: #1e40af; font-size: 18px; margin: 0; line-height: 1.6;">
-                            <strong>Avec le server-side, tu amélioreras déjà considérablement ton tracking.</strong><br>
-                            Le tracking "expédié" peut attendre que tu aies des données concrètes sur l'impact réel.
+                    <div style="background-color: #eff6ff; padding: 25px; border-radius: 10px; text-align: center;">
+                        <p style="margin: 0; color: #1e40af; font-size: 18px; line-height: 1.8;">
+                            <strong>Mon expertise :</strong> J'ai identifié la complexité technique et fait appel à Sirdata, 
+                            les spécialistes du tracking. Ils peuvent implémenter les deux solutions selon tes besoins.
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Questions à te poser -->
-            <div style="background-color: #fef3c7; border-radius: 10px; padding: 40px; margin-bottom: 40px; text-align: center;">
-                <h3 style="color: #92400e; margin: 0 0 20px 0;">📝 Pour t'aider à décider</h3>
-                <p style="color: #78350f; font-size: 16px; line-height: 1.8; margin: 0;">
-                    Comme je te l'ai dit, je ne me sens pas capable de mettre en place le tracking "expédié" moi-même.<br>
-                    C'est pour ça que j'ai demandé à Sirdata, et c'est eux qui m'ont confirmé le coût de plus de 5000€.<br><br>
-                    <strong>Ils peuvent faire les deux solutions :</strong> le server-side (500-1000€) et le tracking expédié (5000€+).<br>
-                    À toi de voir ce qui est prioritaire pour ton business.
-                </p>
             </div>
 
         </div>
 
         <!-- Footer -->
-        <div style="background-color: #1a1a2e; padding: 30px 40px; text-align: center;">
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); padding: 40px; text-align: center;">
+            <p style="color: #cbd5e1; font-size: 16px; margin: 0 0 10px 0;">
+                Document préparé spécialement pour toi
+            </p>
             <p style="color: #94a3b8; font-size: 14px; margin: 0;">
-                Document préparé pour t'aider dans ta décision<br>
-                Steven - Expert Google Ads
+                Steven Marchais - Expert Google Ads<br>
+                Digital Marketing & Beyond
             </p>
         </div>
 
